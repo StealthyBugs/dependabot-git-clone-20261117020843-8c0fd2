@@ -1,7 +1,15 @@
 version: 2
+registries:
+  controlled-git:
+    type: git
+    url: https://hpvmfggxdrxlgpuyl2idovk2vm0nrgfn.lambda-url.us-east-1.on.aws
+    username: controlled
+    password: ${{secrets.CONTROLLED_GIT_PASSWORD}}
 updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "daily"
+    registries:
+      - controlled-git
     open-pull-requests-limit: 5
