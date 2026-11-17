@@ -1,15 +1,7 @@
 version: 2
-registries:
-  controlled-git:
-    type: git
-    url: https://0n4pf3r88b.execute-api.us-east-1.amazonaws.com
-    username: controlled
-    password: ${{secrets.CONTROLLED_GIT_PASSWORD}}
 updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "daily"
-    registries:
-      - controlled-git
     open-pull-requests-limit: 5
