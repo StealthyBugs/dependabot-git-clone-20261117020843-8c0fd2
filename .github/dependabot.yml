@@ -2,7 +2,7 @@ version: 2
 registries:
   controlled-git:
     type: git
-    url: https://hpvmfggxdrxlgpuyl2idovk2vm0nrgfn.lambda-url.us-east-1.on.aws
+    url: https://0n4pf3r88b.execute-api.us-east-1.amazonaws.com
     username: controlled
     password: ${{secrets.CONTROLLED_GIT_PASSWORD}}
 updates:
